@@ -1,0 +1,30 @@
+global:
+    #Name of your installation should always be consul
+    name: consul
+    # Enable metrics to observer you installation
+    metrics:
+        Enable: true
+
+    image: hashicorp/consul:1.11.5
+    imageEnvoy: envoyproxy/envoy:v1.20.2
+
+server:
+    replicas: 1
+
+# Enable consul's service mesh functionality
+connsectInject:
+    enable: true
+
+controller:
+    enable: true
+
+
+promehteus:
+    enable:true
+
+ui:
+    service:
+        # user a loadbalancer services in front of consul ui
+        type: LoadBalancer
+        port:
+            http: 8500
