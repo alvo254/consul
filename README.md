@@ -1,2 +1,2 @@
 # consul
-introduction to consul and service mesh: consul up and running
+introduction to consul and service mesh: consul up and running.
