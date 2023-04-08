@@ -18,7 +18,6 @@ connsectInject:
 controller:
     enable: true
 
-
 promehteus:
     enable:true
 
